@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Каталог</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220424200647">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item"><a href="main.html" class="header__link">Главная</a></li>
+						<li class="header__item"><a href="catalog.html" class="header__link">Каталог</a></li>
+						<li class="header__item"><a href="about-us.html" class="header__link">О нас</a></li>
+						<li class="header__item"><a href="contacts.html" class="header__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page__catalog catalog-page">
+			<section class="catalog-page__header header-catalog">
+				<div class="header-catalog__container">
+					<div class="header-catalog__title">
+						Разделочные ножи
+					</div>
+					<div class="header-catalog__navigate">
+						<div class="header-catalog__breadcrumps breadcrumps">
+							<ul class="breadcrumps__list">
+								<li class="breadcrumps__item"><a href="home.html" class="breadcrumps__link">Главная</a></li>
+								<li class="breadcrumps__item"><span class="breadcrumps__link">Каталог</span></li>
+							</ul>
+						</div>
+						<div class="header-catalog__control">
+							<select name="form[]" class="controll">
+								<option value="1" selected>По популярности</option>
+								<option value="2">По цене</option>
+								<option value="3">По дате</option>
+								<option value="4">По цвтету</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog-page__body body-catalog">
+				<div class="body-catalog__container">
+					<div class="body-catalog__filter">
+						<button class="body-catalog__title_not-spoller body-catalog__title body-catalog_filter-container">Фильтр товаров</button>
+						<div class="body-catalog__items">
+							<div class="body-catalog__item">
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div type="button" data-spoller class="spollers-catalog__title">Цена</div>
+										<div data-range class="spollers-catalog__body">
+											<div class="spollers-catalog__inputs">
+												<input data-range-from="0" autocomplete="off" type="number" value="0" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+												<input data-range-to="5000" autocomplete="off" type="number" value="5000" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+											</div>
+											<div data-range-item class="spollers-catalog__range">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="body-catalog__item">
+								<button class="body-catalog__title body-catalog_filter-container">Производство</button>
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div class="spollers-catalog__body_ck">
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_1" class="checkbox__label"><span class="checkbox__text">Турция <small>(250)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_2" class="checkbox__label"><span class="checkbox__text">Китай<small>(25)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_3" class="checkbox__label"><span class="checkbox__text">Казахстан <small>(265)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_4" class="checkbox__label"><span class="checkbox__text">Россия <small>(18)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_5" class="checkbox__label"><span class="checkbox__text">Франция <small>(170)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_6" class="checkbox__label"><span class="checkbox__text">Америка <small>(170)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_7" class="checkbox__label"><span class="checkbox__text">Япония <small>(170)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_8" class="checkbox__label"><span class="checkbox__text">Израиль <small>(170)</small></span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="body-catalog__item">
+								<button class="body-catalog__title body-catalog_filter-container">Материал</button>
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div class="spollers-catalog__body_ck">
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_14" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_14" class="checkbox__label"><span class="checkbox__text">Хлопок <small>(250)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_15" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_15" class="checkbox__label"><span class="checkbox__text">Лен <small>(25)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_16" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_16" class="checkbox__label"><span class="checkbox__text">Углерод <small>(265)</small></span></label>
+											</div>
+											<div class="spollers-catalog__checkbox checkbox">
+												<input id="c_17" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+												<label for="c_17" class="checkbox__label"><span class="checkbox__text">Синтетика <small>(18)</small></span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div сlass="body-catalog__item">
+								<div class="body-catalog__title body-catalog__title body-catalog_filter-container">Размер, мм</div>
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div data-range class="spollers-catalog__body">
+											<div class="spollers-catalog__inputs">
+												<input data-range-from="0" autocomplete="off" type="number" value="0" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+												<input data-range-to="5000" autocomplete="off" type="number" value="5000" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+											</div>
+											<div data-range-item class="spollers-catalog__range">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="body-catalog__item">
+								<div class="body-catalog__title body-catalog__title body-catalog_filter-container">Длина футболки, мм</div>
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div data-range class="spollers-catalog__body">
+											<div class="spollers-catalog__inputs">
+												<input data-range-from="0" autocomplete="off" type="number" value="0" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+												<input data-range-to="5000" autocomplete="off" type="number" value="5000" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+											</div>
+											<div data-range-item class="spollers-catalog__range">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="body-catalog__item">
+								<div class="body-catalog__title body-catalog__title body-catalog_filter-container">Ширина талий, мм</div>
+								<div class="body-catalog__spollers spollers-catalog">
+									<div class="spollers-catalog__item body-catalog_filter-container">
+										<div data-range class="spollers-catalog__body">
+											<div class="spollers-catalog__inputs">
+												<input data-range-from="0" autocomplete="off" type="number" value="0" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+												<input data-range-to="5000" autocomplete="off" type="number" value="5000" name="form[]" data-error="Ошибка" placeholder="0" class="input">
+											</div>
+											<div data-range-item class="spollers-catalog__range">
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-catalog__products">
+						<div class="body-catalog__wrap">
+							<div class="goods-page__content">
+								<div class="goods-page__body">
+									<a href="product.html" class="goods-page__image">
+										<span class="goods-page-ibg_contain"><picture><source srcset="img/pains.webp" type="image/webp"><img src="img/pains.jpg" alt="goods-knife"></picture></span>
+									</a>
+									<div class="goods-page__describe describe-goods">
+										<h4 class="describe-goods__title">
+											<a href="product.html">Armani Exchange</a>
+										</h4>
+										<div class="describe-goods__quality">
+											<div class="describe-goods__size">XXS</div>
+											<div class="describe-goods__material">Лен</div>
+										</div>
+										<div class="describe-goods__grade">
+											<div class="describe-goods__rating">
+												<div class="rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+											</div>
+											<div class="describe-goods__review">12 отзывов</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods-page__order">
+									<div class="goods-page__inform">
+										<div class="goods-page__price">
+											5 000 р.
+										</div>
+										<div class="goods-page__icons">
+											<a class="goods-page__icon_1 _icons-compare">
+												<img src="img/iconsfont/compare.svg" alt="">
+											</a>
+											<a class="goods-page__icon_2 _icons-favourite">
+												<img src="img/iconsfont/favouriter.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<button class="goods-page__button button _icons-basket">В корзину</button>
+								</div>
+							</div>
+							<div class="goods-page__content">
+								<div class="goods-page__body">
+									<a href="product.html" class="goods-page__image">
+										<span class="goods-page-ibg_contain"><picture><source srcset="img/thutbolca.webp" type="image/webp"><img src="img/thutbolca.jpg" alt="goods-knife"></picture></span>
+									</a>
+									<div class="goods-page__describe describe-goods">
+										<h4 class="describe-goods__title">
+											<a href="product.html">Футболка</a>
+										</h4>
+										<div class="describe-goods__quality">
+											<div class="describe-goods__size">L</div>
+											<div class="describe-goods__material">Хлопок</div>
+										</div>
+										<div class="describe-goods__grade">
+											<div class="describe-goods__rating">
+												<div class="rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+											</div>
+											<div class="describe-goods__review">12 отзывов</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods-page__order">
+									<div class="goods-page__inform">
+										<div class="goods-page__price">
+											2 000 р.
+										</div>
+										<div class="goods-page__icons">
+											<a class="goods-page__icon_1 _icons-compare">
+												<img src="img/iconsfont/compare.svg" alt="">
+											</a>
+											<a class="goods-page__icon_2 _icons-favourite">
+												<img src="img/iconsfont/favouriter.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<button class="goods-page__button button _icons-basket">В корзину</button>
+								</div>
+							</div>
+							<div class="goods-page__content">
+								<div class="goods-page__body">
+									<a href="product.html" class="goods-page__image">
+										<span class="goods-page-ibg_contain"><picture><source srcset="img/adidas.webp" type="image/webp"><img src="img/adidas.jpg" alt="goods-knife"></picture></span>
+									</a>
+									<div class="goods-page__describe describe-goods">
+										<h4 class="describe-goods__title">
+											<a href="product.html">Adidas</a>
+										</h4>
+										<div class="describe-goods__quality">
+											<div class="describe-goods__size">M</div>
+											<div class="describe-goods__material">Синтетика</div>
+										</div>
+										<div class="describe-goods__grade">
+											<div class="describe-goods__rating">
+												<div class="rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+											</div>
+											<div class="describe-goods__review">12 отзывов</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods-page__order">
+									<div class="goods-page__inform">
+										<div class="goods-page__price">
+											2 719 р.
+										</div>
+										<div class="goods-page__icons">
+											<a class="goods-page__icon_1 _icons-compare">
+												<img src="img/iconsfont/compare.svg" alt="">
+											</a>
+											<a class="goods-page__icon_2 _icons-favourite">
+												<img src="img/iconsfont/favouriter.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<button class="goods-page__button button _icons-basket">В корзину</button>
+								</div>
+							</div>
+							<div class="goods-page__content">
+								<div class="goods-page__body">
+									<a href="product.html" class="goods-page__image">
+										<span class="goods-page-ibg_contain"><picture><source srcset="img/trendyol.webp" type="image/webp"><img src="img/trendyol.jpg" alt="goods-knife"></picture></span>
+									</a>
+									<div class="goods-page__describe describe-goods">
+										<h4 class="describe-goods__title">
+											<a href="product.html">Trendyol</a>
+										</h4>
+										<div class="describe-goods__quality">
+											<div class="describe-goods__size">XS</div>
+											<div class="describe-goods__material">Хлопок</div>
+										</div>
+										<div class="describe-goods__grade">
+											<div class="describe-goods__rating">
+												<div class="rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+											</div>
+											<div class="describe-goods__review">12 отзывов</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods-page__order">
+									<div class="goods-page__inform">
+										<div class="goods-page__price">
+											3 000 р.
+										</div>
+										<div class="goods-page__icons">
+											<a class="goods-page__icon_1 _icons-compare">
+												<img src="img/iconsfont/compare.svg" alt="">
+											</a>
+											<a class="goods-page__icon_2 _icons-favourite">
+												<img src="img/iconsfont/favouriter.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<button class="goods-page__button button _icons-basket">В корзину</button>
+								</div>
+							</div>
+							<div class="goods-page__content">
+								<div class="goods-page__body">
+									<a href="product.html" class="goods-page__image">
+										<span class="goods-page-ibg_contain"><picture><source srcset="img/black.webp" type="image/webp"><img src="img/black.jpg" alt="goods-knife"></picture></span>
+									</a>
+									<div class="goods-page__describe describe-goods">
+										<h4 class="describe-goods__title">
+											<a href="product.html">Black</a>
+										</h4>
+										<div class="describe-goods__quality">
+											<div class="describe-goods__size">XM</div>
+											<div class="describe-goods__material">Синтетика</div>
+										</div>
+										<div class="describe-goods__grade">
+											<div class="describe-goods__rating">
+												<div class="rating rating_set">
+													<div class="rating__body">
+														<div class="rating__active"></div>
+														<div class="rating__items">
+															<input type="radio" class="rating__item" value="1" name="rating">
+															<input type="radio" class="rating__item" value="2" name="rating">
+															<input type="radio" class="rating__item" value="3" name="rating">
+															<input type="radio" class="rating__item" value="4" name="rating">
+															<input type="radio" class="rating__item" value="5" name="rating">
+														</div>
+													</div>
+													<div class="rating__value">5</div>
+												</div>
+											</div>
+											<div class="describe-goods__review">12 отзывов</div>
+										</div>
+									</div>
+								</div>
+								<div class="goods-page__order">
+									<div class="goods-page__inform">
+										<div class="goods-page__price">
+											4 000 р.
+										</div>
+										<div class="goods-page__icons">
+											<a class="goods-page__icon_1 _icons-compare">
+												<img src="img/iconsfont/compare.svg" alt="">
+											</a>
+											<a class="goods-page__icon_2 _icons-favourite">
+												<img src="img/iconsfont/favouriter.svg" alt="">
+											</a>
+										</div>
+									</div>
+									<button class="goods-page__button button _icons-basket">В корзину</button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-page__footer footer-catalog">
+							<div class="footer-catalog__container">
+								<button class="footer-catalog__more">Показать больше</button>
+								<div class="footer-catalog__pagging pagging">
+									<button disabled class="pagging__arrow pagging__arrow_left _icons-submit"></button>
+									<ul class="pagging__list">
+										<li class="pagging__item"><a href="#" class="pagging__link _active">1</a></li>
+										<li class="pagging__item"><a href="#" class="pagging__link">2</a></li>
+										<li class="pagging__item"><a href="#" class="pagging__link">3</a></li>
+										<li class="pagging__item"><a href="#" class="pagging__link">...</a></li>
+										<li class="pagging__item"><a href="#" class="pagging__link">15</a></li>
+									</ul>
+									<button class="pagging__arrow pagging__arrow_right _icons-submit"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__top top-footer">
+				<div class="top-footer__container">
+					<div class="top-footer__title">
+						Интернет-магазин "Mustang"
+					</div>
+					<div class="top-footer__text">
+						Наш интернет-магазин "Mustang" предлагает Вам одежду очень высокого качества.</div>
+				</div>
+			</div>
+			<div class="footer__mid mid-footer">
+				<div class="mid-footer__container">
+					<div class="mid-footer__item item-mid-footer">
+						<button>ИНФОРМАЦИЯ</button>
+						<div class="item-mid-footer__wrap">
+							<ul class="item-mid-footer__list">
+								<li class="item-mid-footer__item"><a href="catalog.html" class="item-mid-footer__link">Мустанговская одежда
+										в Алмате и Алматинской
+										области</a></li>
+								<li class="item-mid-footer__item"><a href="catalog.html" class="item-mid-footer__link">Каталог</a></li>
+								<li class="item-mid-footer__item"><a href="about-us.html" class="item-mid-footer__link">О нас</a></li>
+								<li class="item-mid-footer__item"><a href="contacts.html" class="item-mid-footer__link">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mid-footer__item item-mid-footer">
+						<button class="item-mid-footer__title _icons-tabArr">ДОПОЛНИТЕЛЬНО</button>
+						<div class="item-mid-footer__wrap">
+							<ul class="item-mid-footer__list">
+								<li class="item-mid-footer__item"><a href="#" class="item-mid-footer__link">Подарочные сертификаты</a></li>
+								<li class="item-mid-footer__item"><a href="#" class="item-mid-footer__link">Партнеры</a></li>
+								<li class="item-mid-footer__item"><a href="catalog.html" class="item-mid-footer__link">Товары со скидкой</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="mid-footer__item item-mid-footer">
+						<button class="item-mid-footer__title _icons-tabArr">ЛИЧНЫЙ КАБИНЕТ</button>
+						<div class="item-mid-footer__wrap">
+							<ul class="item-mid-footer__list">
+								<li class="item-mid-footer__item"><a href="#" class="item-mid-footer__link">Личный кабинет</a></li>
+								<li class="item-mid-footer__item"><a href="#" class="item-mid-footer__link">История заказов</a></li>
+								<li class="item-mid-footer__item"><a href="#" class="item-mid-footer__link">Мои закладки</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom bottom-footer">
+				<div class="bottom-footer__container">
+					<div class="bottom-footer__item item-bottom-footer">
+						<div class="item-bottom-footer__wrap">
+							<div class="item-bottom-footer__title">
+								КОНТАКТЫ
+							</div>
+						</div>
+						<ul class="item-bottom-footer__list">
+							<li class="item-bottom-footer__item"><a href="tel::88007774967" class="item-bottom-footer__link">8 (800) 777-49-67</a></li>
+							<li class="item-bottom-footer__item"><a href="#" class="item-bottom-footer__link"><span>Пн-Пт</span>
+									7:00 - 16:00 (МСК)</a></li>
+							<li class="item-bottom-footer__item"><a href="contacts.html" class="item-bottom-footer__link"><span>Алматы,</span>
+									<span>ул. Манаса,</span>
+									д. 1, офис «6Б»</a></li>
+							<li class="item-bottom-footer__item"><a href="mailto::info@zlatmax.ru" class="item-bottom-footer__link">info@mustang.ru</a></li>
+							<li class="item-bottom-footer__item item-bottom-footer__item_icon">
+								<div><a href="" class="item-bottom-footer__link"><img src="img/iconsfont/facebook.svg" alt="facebook"></div></a>
+								<div><a href="" class="item-bottom-footer__link"><img src="img/iconsfont/viber.svg" alt="viber"></div></a>
+								<div><a href="" class="item-bottom-footer__link"><img src="img/iconsfont/telegram.svg" alt="telegram"></div></a>
+								<div><a href="" class="item-bottom-footer__link"><img src="img/iconsfont/whatsapp.svg" alt="whatsapp"></div></a>
+							</li>
+						</ul>
+					</div>
+					<div class="bottom-footer__item item-bottom-footer">
+						<div class="item-bottom-footer__wrap">
+							<button class="item-bottom-footer__title item-bottom-footer__title_sp">
+								ПОЛЕЗНЫЕ ССЫЛКИ
+							</button>
+							<div class="item-bottom-footer__text">
+								Способы оплаты и доставки
+							</div>
+						</div>
+					</div>
+					<div class="bottom-footer__item item-bottom-footer">
+						<div class="item-bottom-footer__wrap">
+							<button class="item-bottom-footer__title item-bottom-footer__title_sp">
+								НАША ГАРАНТИЯ
+							</button>
+							<div class="item-bottom-footer__text">
+								Недовольны своей покупкой?
+								Вы можете вернуть ее в течении
+								30 дней с даты получения,
+								согласно <a href="#">нашим правилам</a>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-footer__item item-bottom-footer">
+						<div class="item-bottom-footer__wrap item-bottom-footer__wrap_1">
+							<div class="item-bottom-footer__title">
+								НОВОСТНАЯ РАССЫЛКА
+							</div>
+							<div class="item-bottom-footer__text">
+								Подпишитесь прямо сейчас!
+							</div>
+							<form action="#" class="item-bottom-footer__form">
+								<label for="item-bottom-footer__input" class="item-bottom-footer__label">
+									<div class="item-bottom-footer__line">
+										<input id="item-bottom-footer__input" data-error="Ошибка" data-required="email" placeholder="example@gmail.com" autocomplete="off" name="form[]" type="text" class="item-bottom-footer__input">
+										<button type="submit" class="item-bottom-footer__button _icons-submit"></button>
+									</div>
+								</label>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer__law law-footer">
+				<div class="law-footer__container">
+					<div class="law-footer__link-copy">
+						Все материалы, размещенные на сайте, носят справочный характер и не являются
+						публичной офертой, определяемойположениями Статьи 437 Гражданского кодекса.
+						При копировании материалов гиперссылка на www.mustang.ru обязательна!
+					</div>
+					<div class="law-footer__corp">
+						www.mustang.ru ©
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220424200647"></script>
+</body>
+
+</html>
